@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./task1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+    @media only screen and (max-width:600px) {
+        body{
+            /* background-image: linear-gradient(to right,rgba(193, 20, 220, 0.86),rgb(238, 144, 225)); */
+           background-image: url(./image/pexels-thiago-japyassu-1069798.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                        
+        }
+    }
+    </style>
+</head>
+<body>
+    <script src="./valid.js">
+
+    </script>
+    <form action="">
+        <div class="container">
+         <h1>Login</h1><br><br>
+        <label for="fname"><b>UserName</b></label>&nbsp;
+        <input type="text" name="name" required minlength="2" maxlength="10"><br><br>
+        <label for="email"><b>Email</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email" required minlength="10" maxlength="22"><br><br>
+        <label for="password"><b>Password</b></label>&nbsp;
+        <input type="password" name="password"><br><br>
+        <input  type="checkbox" class="rmd">
+        <label for="name"><b>Remember me</b></label>&nbsp;&nbsp;
+        <a href=""><b>Signup</b></a><br><br>
+        <button id="submit"  class="btn" type="submit"><strong><a href="./index1.html" target="_blank">Login</a></strong></button><br><br>
+        <a href="" class="ft"><b>ForgetPassword?</b></a>
+        <span role="alert" id="nameError" aria-hidden="true">
+            Please enter Name
+          </span>
+        </div>
+    </form>
+</body>
+</html>
